@@ -1,0 +1,27 @@
+<div  class="body">
+    <div class="images">
+        <div *ngFor="let item of image" class="image">
+        <img [src]="item">
+        </div>
+    </div>
+    <div class="controls">
+        <div class="inline">
+            <img [src]="image[0]"/>
+        </div>
+        <div class="close">
+            <span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+        </div>
+        <div class="prev">
+            <span>
+            <i class="fas fa-chevron-left"></i>
+                </span>
+        </div>
+        <div class="next">
+            <span>
+            <i class="fas fa-chevron-right"></i>
+                </span>
+        </div>
+    </div>
+</div>
